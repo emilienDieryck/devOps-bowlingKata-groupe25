@@ -1,0 +1,36 @@
+{
+  "name": "devops-bowlingkata-groupe25",
+  "version": "1.0.0",
+  "description": "devops projet bowling kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz",
+    "build": "webpack ./src/app.js -o public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilienDieryck/devOps-bowlingKata-groupe25.git"
+  },
+  "keywords": [
+    "devOps",
+    "project"
+  ],
+  "author": "Dieryck Emilien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilienDieryck/devOps-bowlingKata-groupe25/issues"
+  },
+  "homepage": "https://github.com/emilienDieryck/devOps-bowlingKata-groupe25#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
