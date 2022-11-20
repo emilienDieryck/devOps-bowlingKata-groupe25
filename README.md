@@ -1,1 +1,7 @@
-# devOps-bowlingKata-groupe25
+##### projet DevOps bowling Kata #####
+
+
+# FROM :
+# Vandervelden Tanguy
+# Dieryck Emilien
+
