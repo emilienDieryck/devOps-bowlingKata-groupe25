@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watchAll",
     "commit": "cz",
     "build": "webpack ./src/app.js -o public/",
     "prettier": "prettier -c \"src/**/*.js\"",
