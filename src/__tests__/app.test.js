@@ -1,8 +1,8 @@
-const { getCurrentMonth } = require("../app");
+const { bowlingKata , roll , score } = require('../app');
 
-describe("app tests suites - getCurrentMonth", () => {
+
+describe("app test the roll ", () => {
   test("should return the current month", () => {
-    const result = getCurrentMonth;
-    expect(result).toBe("November");
+    expect(roll(3)).toBe(3);
   });
 });

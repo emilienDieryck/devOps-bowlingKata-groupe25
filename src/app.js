@@ -1,26 +1,23 @@
-const getCurrentMonth = (date = new Date()) => {
-  const currentMonth = date.getMonth();
 
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
 
-  return months[currentMonth];
-};
+function bowlingKata() {
+  this.rolls = [];
+  this.currentRoll = 0;
 
-try {
-  document.getElementById("month").innerText = getCurrentMonth();
-} catch (err) {}
+}
 
-exports.getCurrentMonth = getCurrentMonth();
+function roll(a) {
+  this.rolls[this.currentRoll++] = a;
+
+}
+function score() {
+
+  const score = 0;
+  const frameIndex = 0;
+
+
+
+  
+}
+
+module.exports = { bowlingKata , roll , score } ;
