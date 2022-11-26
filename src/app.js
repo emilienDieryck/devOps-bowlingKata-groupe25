@@ -3,7 +3,7 @@ class BowlingKata {
     this.rolls = [];
   }
   roll(pins) {
-    if (pins > 10 || pins > 0) {
+    if (pins > 10 || pins < 0) {
       throw new Error("roll not between 0 and 10");
     }
     this.rolls.push(pins);
