@@ -79,3 +79,12 @@ it("should raise an exception if roll > 10", () => {
     expect(error.message).toBe("roll not between 0 and 10");
   }
 });
+
+it("should raise an exception if roll < 0", () => {
+  const Game = new BowlingKata();
+  try {
+    Game.roll(-1);
+  } catch (error) {
+    expect(error.message).toBe("roll not between 0 and 10");
+  }
+});
