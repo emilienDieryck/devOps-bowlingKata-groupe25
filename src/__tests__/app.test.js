@@ -89,13 +89,21 @@ it("should raise an exception if roll < 0", () => {
   }
 });
 
-it("should raise an exception ", () => {
+it("should return the correct score when there is only spare ", () => {
   const Game = new BowlingKata();
-  try {
-    for (let i = 0; i < 20; i++) {
-      Game.roll(8);
-    }
-  } catch (error) {
-    expect(error.message).toBe("score can not be > 10");
+  for (let i = 0; i < 21; i++) {
+    Game.roll(5);
   }
+  expect(Game.score).toBe(150);
+});
+
+it("should return the correct score when there is only 4 except at the end ", () => {
+  const Game = new BowlingKata();
+  for (let i = 0; i < 18; i++) {
+    Game.roll(4);
+  }
+  Game.roll(0);
+  Game.roll(0);
+
+  expect(Game.score).toBe(72);
 });
