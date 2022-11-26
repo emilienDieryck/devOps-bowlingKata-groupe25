@@ -107,3 +107,10 @@ it("should return the correct score when there is only 4 except at the end ", ()
 
   expect(Game.score).toBe(72);
 });
+it("should return the correct score (80) when there is only 8 (and 0) ", () => {
+  const Game = new BowlingKata();
+  for (let i = 0; i < 20; i++) {
+    i % 2 == 0 ? Game.roll(8) : Game.roll(0);
+  }
+  expect(Game.score).toBe(80);
+});
