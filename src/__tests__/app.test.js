@@ -70,3 +70,12 @@ it("should return the correct score if the last frame is a spare", () => {
 
   expect(Game.score).toBe(133);
 });
+
+it("should raise an exception if roll > 10", () => {
+  const Game = new BowlingKata();
+  try {
+    Game.roll(11);
+  } catch (error) {
+    expect(error.message).toBe("roll not between 0 and 10");
+  }
+});
